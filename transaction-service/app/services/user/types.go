@@ -1,0 +1,12 @@
+package user
+
+import (
+	"github.com/google/uuid"
+	"time"
+)
+
+type UserCreatedEventRequest struct {
+	UserId    uuid.UUID `json:"user_id"`
+	Email     string    `json:"email"`
+	CreatedAt time.Time `json:"created_at"`
+}
